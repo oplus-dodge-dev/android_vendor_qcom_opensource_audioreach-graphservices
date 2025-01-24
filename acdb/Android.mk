@@ -37,6 +37,9 @@ LOCAL_MODULE_OWNER := qti
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 
+LOCAL_CFLAGS += \
+    -Wno-address-of-packed-member
+
 LOCAL_HEADER_LIBRARIES := \
     libcutils_headers \
     libutils_headers \
@@ -114,6 +117,9 @@ LOCAL_MODULE := libats
 LOCAL_MODULE_OWNER := qti
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
+
+LOCAL_CFLAGS += \
+    -Wno-address-of-packed-member
 
 LOCAL_HEADER_LIBRARIES := \
     libcutils_headers \
